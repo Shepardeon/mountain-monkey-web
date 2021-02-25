@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// DEFINE NEW VARIABLES HERE
+
+// EXEMPLES
+    // Update the blue shade, used for links
+    //$blue: #06bcef;
+    // Add pink and its invert
+    //$pink: #ff8080;
+    //$pink-invert: #fff;
+    // Update the sans-serif font family
+    //$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// END OF NEW VARIABLES
+
+// Import bulma
+@import "../node_modules/bulma/bulma";
