@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("All is good :)");
-});
+jQuery(() => {
+    // Our jQuery context
+
+})
