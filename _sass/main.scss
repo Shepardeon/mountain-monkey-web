@@ -3,6 +3,13 @@
 // Début variables custom
 
 $dark: #3d3d3d;
+$blue: #5C8CA0;
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
 
 // Fin variables custom
 
@@ -29,7 +36,7 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-    color: #5C8CA0;
+    color: $blue;
 }
 
 .mm-bg-img {
@@ -40,8 +47,26 @@ body {
     align-content: center;
 }
 
+.pulse-btn {
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba($primary, .5);
+    -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-btn:hover {
+    -webkit-animation: none;
+}
+
 #title {
     padding-top: 8rem;
+}
+
+#hero-content {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    margin-bottom: 0;
 }
 
 @media (max-width: $sm) {
@@ -75,17 +100,36 @@ body {
     .mm-bg-img {
         top: -100px;
     }
+
+    #hero-content p {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
 }
 
 @media (min-width: $lg) {
     .mm-bg-img {
         top: -200px;
     }
+
+    .pulse-btn {
+        margin-top: 2rem;
+    }
+
+    #hero-content p {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
 }
 
 @media (min-width: $xl) {
     .mm-bg-img {
         top: -350px;
+    }
+
+    #hero-content p {
+        margin-left: 10em;
+        margin-right: 10em;
     }
 }
 
@@ -96,5 +140,20 @@ body {
 
     #title {
         padding-top: 12rem;
+    }
+}
+
+// ANIMATION DEFINITION
+@-webkit-keyframes pulse {
+    0% {
+        @include transform(scale(.9));
+    }
+    70% {
+        @include transform(scale(1));
+        box-shadow: 0 0 0 25px rgba($primary, 0);
+    }
+    100% {
+        @include transform(scale(.9));
+        box-shadow: 0 0 0 0 rgba($primary, 0);
     }
 }
