@@ -36,12 +36,38 @@ body {
     position: fixed;
     z-index: -1;
     min-width: 100%;
+    min-height: 100%;
     align-content: center;
+}
+
+#title {
+    padding-top: 8rem;
+}
+
+@media (max-width: $sm) {
+    #logo {
+        max-width: 50%;
+    }
+
+    #title {
+        font-size: 2rem;
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: $md) {
+    #title {
+        padding-top: 6rem;
+    }
 }
 
 @media (min-width: $sm) {
     .mm-bg-img {
         top: 0px;
+    }
+
+    #title {
+        font-size: 3rem;
     }
 }
 
@@ -66,5 +92,9 @@ body {
 @media (min-width: $xxl) {
     .mm-bg-img {
         top: -450px;
+    }
+
+    #title {
+        padding-top: 12rem;
     }
 }
