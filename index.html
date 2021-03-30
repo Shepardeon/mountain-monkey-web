@@ -13,32 +13,41 @@
 
     <body>
         <img class="mm-bg-img" src="res/mountain.jpg" alt="background-image">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a id="logo" class="navbar-brand" href="#">
-                    <img src="res/mm_logo.png" alt="Logo Mountain Monkey">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse mt-md-4" id="navContent">
-                    <ul class="navbar-nav flex-row flex-wrap ml-md-auto">
-                        <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2" href="#">Notre formation</a></li>
-                        <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2" href="#">Qui sommes nous ?</a></li>
-                        <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2" href="#">Le projet</a></li>
-                        <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2" href="#">Mountain Monkey</a></li>
-                        <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2" href="#">Notre équipe</a></li>
-                    </ul>
+        <div class="scroll-block" style="min-height: 100%;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a id="logo" class="navbar-brand" href="#">
+                        <img src="res/mm_logo.png" alt="Logo Mountain Monkey">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-md-4" id="navContent">
+                        <ul class="navbar-nav flex-row flex-wrap ml-md-auto">
+                            <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2 js-scrollTo" href="#formation">Notre formation</a></li>
+                            <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2 js-scrollTo" href="#">Qui sommes nous ?</a></li>
+                            <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2 js-scrollTo" href="#">Le projet</a></li>
+                            <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2 js-scrollTo" href="#">Mountain Monkey</a></li>
+                            <li class="nav-item col-4 col-md-auto"><a class="nav-link p-2 js-scrollTo" href="#">Notre équipe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="intro" style="min-height:100%;min-width:100%">
+                <h1 id="title" class="display-1 text-center font-italic">La VR au sommet</h1>
+
+                <div id="hero-content" class="jumbotron text-center" style="margin-top: 20%;">
+                    <p class="lead border-bottom border-primary p-3">
+                        Mountain Monkey regroupe 6 élèves ingénieurs en 4ème année à l’Institut de Génie Informatique et Industriel (Formation IG2I de Centrale Lille Institut).
+                    </p>
+                    <span class="pulse-btn btn btn-primary js-scrollTo" href="#formation">⮟</span>
                 </div>
             </div>
-        </nav>
-        <h1 id="title" class="display-1 text-center font-italic mt-5">La VR au sommet</h1>
+        </div>
 
-        <div id="hero-content" class="jumbotron text-center" style="margin-top: 20%;">
-            <p class="lead border-bottom border-primary p-3">
-                Mountain Monkey regroupe 6 élèves ingénieurs en 4ème année à l’Institut de Génie Informatique et Industriel (Formation IG2I de Centrale Lille Institut).
-            </p>
-            <span class="pulse-btn btn btn-primary">⮟</span>
+        <div id="formation" class="scroll-block" style="min-height: 100%;background-color:blue;">
+            asasas
         </div>
 
         <!-- IMPORT JS -->
