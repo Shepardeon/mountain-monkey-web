@@ -12,11 +12,12 @@
     </head>
 
     <body>
+        <span id="top" style="position: absolute; top: 0;"></span>
         <img class="mm-bg-img" src="res/mountain.jpg" alt="background-image">
         <div class="scroll-block" style="min-height: 100%;">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a id="logo" class="navbar-brand" href="#">
+                    <a id="logo" class="navbar-brand js-scrollTo" href="#top">
                         <img src="res/mm_logo.png" alt="Logo Mountain Monkey">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,19 +36,49 @@
             </nav>
 
             <div id="intro" style="min-height:100%;min-width:100%">
-                <h1 id="title" class="display-1 text-center font-italic">La VR au sommet</h1>
+                <h1 id="title" class="display-1 text-center font-italic">La Réalité Virtuelle au sommet</h1>
 
                 <div id="hero-content" class="jumbotron text-center" style="margin-top: 20%;">
                     <p class="lead border-bottom border-primary p-3">
-                        Mountain Monkey regroupe 6 élèves ingénieurs en 4ème année à l’Institut de Génie Informatique et Industriel (Formation IG2I de Centrale Lille Institut).
+                        Mountain Monkey regroupe 6 élèves ingénieurs en 4ème année à l’école d’ingénieurs IG2I de Centrale Lille Institut.
                     </p>
                     <span class="pulse-btn btn btn-primary js-scrollTo" href="#formation">⮟</span>
                 </div>
             </div>
         </div>
 
-        <div id="formation" class="scroll-block" style="min-height: 100%;background-color:blue;">
-            asasas
+        <div id="formation" class="jumbotron scroll-block" style="min-height:100%;min-width:100%">
+            <div class="row p-3 mt-5">
+                <div class="col-8"><h1 class="border-bottom border-primary ml-5">Notre formation</h1></div>
+                <div class="col-4 text-center"><a href="https://ig2i.centralelille.fr/" target="_blank"><img src="res/Centrale_Lille_IG2I.png" alt="IG2I de Centrale Lille Institut"></a></div>
+            </div>
+            <div class="row pl-3">
+                <div class="col">
+                    <div><span class="deco-verticale"></span><span class="deco-horizontale"></span></div>
+                    <div class="ml-5">
+                        <p>L’IG2I est une des <strong>écoles d’ingénieurs de Centrale Lille</strong>. Elle a pour objectif de former des ingénieurs avec une vision globale des systèmes dits intelligents et interconnectés.</p>
+                        <p>Elle propose une formation sur cinq ans avec une alternance de périodes académiques et de stages en entreprises.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h4>Le diplôme</h4>
+                    <p>Diplôme d’ingénieur reconnu par la Commission des Titres d’Ingénieur</p>
+                </div>
+                <div class="col-3">
+                    <h4>Les stages</h4>
+                    <p>20 mois d’expérience professionnelle dans des entreprises</p>
+                </div>
+                <div class="col-3">
+                    <h4>Les outils</h4>
+                    <p>Accès libre à des fablabs et formation au sein de Centrale Lille Institut</p>
+                </div>
+                <div class="col-3">
+                    <h4>Les projets</h4>
+                    <p>Plusieurs partenariats réalisés avec des entreprises conventionnés et financés</p>
+                </div>
+            </div>
         </div>
 
         <!-- IMPORT JS -->

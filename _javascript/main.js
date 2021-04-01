@@ -1,5 +1,11 @@
 jQuery(() => {
     // Our jQuery context
+
+    // Reset du scroll au chargement
+    $(window).on("load", () => {
+        //scrollTo("#top", 10);
+    })
+
     $(window).on('scroll', (e) => {
         let scrollValue = $(window).scrollTop()
         let navHeight = $('nav').height()+16
@@ -17,10 +23,12 @@ jQuery(() => {
         }
 
         // On prépare nos boutons
-        $('.js-scrollTo').on('click', () => {
+        $('.js-scrollTo').off().on('click', function(e) { 
+            // use "function() {}" instead of "() => {}" else babel will replace "this" with "undefined"
             let page = $(this).attr('href')
-            console.log(page)
             scrollTo(page, 750)
+            e.stopPropagation()
+            e.preventDefault()
             return false
         })
     });

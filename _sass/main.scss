@@ -3,6 +3,7 @@
 // Début variables custom
 
 $dark: #3d3d3d;
+$light: #FFFFFF;
 $blue: #5C8CA0;
 
 @mixin transform($property) {
@@ -66,6 +67,30 @@ body {
 
 .scroll-block {
     position: relative;
+}
+
+.jumbotron {
+    background-color: $light;
+}
+
+.deco-verticale {
+    position: absolute;
+    top: -2rem;
+    width: 30px;
+    height: 10px;
+    border: solid $blue;
+    border-radius: 25% 25% 25% 0;
+    background-color: $blue;
+}
+
+.deco-horizontale {
+    position: absolute;
+    top: -2rem;
+    width: 10px;
+    height: 30px;
+    border: solid $blue;
+    border-radius: 25% 0 25% 25%;
+    background-color: $blue;
 }
 
 #title {
