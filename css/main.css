@@ -7311,3 +7311,18 @@ body {
     -ms-transform: scale(0.9);
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(92, 140, 160, 0); } }
+
+
+.people{
+  padding: 5px 5px 5px 5px;
+  border-radius: 30px;
+  border : 3px solid #5C8CA0;
+  text-align : center;
+  
+}
+
+.people img{
+  border-radius: 50%;
+  position: absolute;
+  top : -calc(50%+5px);
+}
