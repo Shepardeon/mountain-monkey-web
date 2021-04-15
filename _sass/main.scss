@@ -260,6 +260,15 @@ body {
   width: 100%;
 }
 
+.primary-bande{
+  background-color: #5C8CA0;
+  width : 100%;
+  height : 10px;
+  position : absolute;
+  z-index : -1;
+  left : 0px;
+}
+
 .align-right{
   text-align: right;
 }
