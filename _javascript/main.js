@@ -10,6 +10,8 @@ jQuery(() => {
         let scrollValue = $(window).scrollTop()
         let navHeight = $('nav').height()+16
 
+        let formationPos = $("#formation").offset().top
+
         // Gestion du scroll par rapport à l'intro
         if (scrollValue > 0){
             $('nav').addClass('fixed-top')
@@ -20,6 +22,13 @@ jQuery(() => {
             $('nav').removeClass('fixed-top')
             $('#intro h1').css({'margin-top': 0})
             $('#intro').css({position: 'static'})
+        }
+
+        if (scrollValue >= formationPos) {
+            $("#formation").css({position: 'fixed'})
+        }
+        else {
+            $("#formation").css({position: 'static'})
         }
 
         // On prépare nos boutons
