@@ -200,7 +200,7 @@ body {
 .ecole {
     margin: 2.5em auto 0 auto;
     text-align: center;
-    max-width: 300px;
+    //max-width: 300px;
     padding: 1em;
 }
 
@@ -266,9 +266,10 @@ body {
 }
 
 .espace{
-  height: 100px;
+  height: 50px;
   width: 100%;
 }
+
 
 @media (min-width: 992px) {
 	.primary-bande{
@@ -280,6 +281,31 @@ body {
 		left: calc( -48px);
 		top : calc( 50% - 10px);
 	}
+
+  .usage-block{
+    margin: 0px 25px 0px 25px;
+    max-width: calc(33% - 50px);
+  }
+
+  .ecole-block{
+    margin: 0px 25px 0px 25px;
+    max-width: calc(50% - 50px);
+    margin-bottom : 25px;
+  }
+
+  .lg-espace{
+    width : 100px;
+    height : 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-icon{
+    padding-left : 50px;
+  }
+  .contact-text{
+    padding-left : 50px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -292,6 +318,10 @@ body {
 	    left: -32px;
 		top : calc( 50% - 10px);
 	}
+
+  .usage-block{
+    margin-bottom : 25px;
+  }
 
 	@media (min-width : 576px){
 		.dessus::before{
@@ -353,4 +383,14 @@ body {
         @include transform(scale(.9));
         box-shadow: 0 0 0 0 rgba($primary, 0);
     }
+}
+
+.livrable-border{
+    border-radius: 20px;
+    padding: 25px 25px 25px 25px;
+    border: 3px solid;
+}
+
+.center{
+  text-align: center;
 }
