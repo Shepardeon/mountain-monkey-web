@@ -7308,6 +7308,9 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
 
+.ecole-bande {
+  margin: 2.5em 0 0 0; }
+
 .ecole {
   margin: 2.5em auto 0 auto;
   text-align: center;
